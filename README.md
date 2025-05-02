@@ -8,6 +8,9 @@
 * Tibero 7
 
 
+## 주의사항
+* Tibero 7 설치 파일은 용량이 커 올릴 수 없으므로, 다시 build 시 [Tmax Technet](https://technet.tmax.co.kr) 에서 다운로드 받아야 함
+
 ## Docker 로 tibero 7 올리기
 
 ### `docker-compose.yml`
