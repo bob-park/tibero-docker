@@ -1,7 +1,7 @@
 services:
   tibero-db:
     container_name: tibero-db
-    image: ghcr.io/bob-park/tibero7:1.0
+    image: ghcr.io/bob-park/tibero:7
     build:
       dockerfile: ./Dockerfile
       x-bake:
