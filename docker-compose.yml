@@ -1,0 +1,15 @@
+services:
+  tibero-db:
+    container_name: tibero-db
+    image: ghcr.io/bob-park/tibero7:1.0
+    build:
+      dockerfile: ./Dockerfile
+      x-bake:
+        platforms:
+          - linux/amd64
+    hostname: hostname
+    ports:
+      - 8629:8629
+    volumes:
+      - ./tibero/database:/home/tibero/tibero7/database
+      - ./tibero/license:/home/tibero/tibero7/license
